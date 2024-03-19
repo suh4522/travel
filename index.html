@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="resources/css/swiper-bundle.min.css"> <!-- swiper -->
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/content.css">
+    <link rel="stylesheet" href="resources/css/font.css">
+    <script src="resources/js/content.js"></script>
     <script src="resources/js/jquery-3.6.0.min.js"></script>
     <script src="resources/js/swiper-bundle.min.js"></script> <!-- swiper -->
 </head>
@@ -14,34 +16,58 @@
     <!-- wrapper -->
     <div class="wrapper">
         <!-- header -->
-        <header class="header">
-            <div class="inner-wrap">
-                <h1 class="header-title"><a href="index.html">용&현수</a></h1>
-                <button type="button" class="btn-menu toggle"><i class="ico-menu"><span class="sr-only">메뉴</span></i></button>
-            </div>
+        <header class="header" id="header">
+            
         </header>
-        <div id="asideMenu" class="aside-menu">
-            <button type="button" class="btn-close toggle"><i class="ico-close"><span class="sr-only">닫기</span></i></button>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#none"><span>맛집</span></a></li>
-                    <li><a href="#none"><span>카페</span></a></li>
-                    <li><a href="#none"><span>숙소위치</span></a></li>
-                </ul>
-            </nav>
-        </div>
         <!--// header -->
+        <main class="content">
+            <div class="sub-title">
+                <h2><strong>용&현수 전주여행</strong></h2>
+            </div>
+            <div class="board-list">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EC%A0%84%EC%A3%BC+%EC%96%B4%EB%B3%B4%EC%9D%B4&oquery=%EC%96%B4%EB%B3%B4%EC%9D%B4&tqi=iQESIlqVN8CssuHSoalssssst20-272789">
+                            <div class="thumb">
+                                <img src="../resources/images/img/img_banner_01.jpg" alt="어보이 숙소">
+                            </div>
+                            <div class="board-title">
+                                <span class="title"><b>[숙소]</b> 어보이 숙소 네이버 검색</span>
+                                <small class="date">입실 14:00 / 퇴실 12:00</small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html/mainBanner02.html">
+                            <div class="thumb">
+                                <img src="../resources/images/img/img_banner_02.jpg" alt="가는차편">
+                            </div>
+                            <div class="board-title">
+                                <span class="title"><b>[srt 4호차 13C 13D]</b> 03.20(수) 가는 차편</span>
+                                <small class="date">수서(10:20) → 전주(12:06)</small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html/mainBanner03.html">
+                            <div class="thumb">
+                                <img style="height: auto;" src="../resources/images/img/img_banner_03.jpg" alt="오는차편">
+                            </div>
+                            <div class="board-title">
+                                <span class="title"><b>[ktx 520 6호차 2A 2B]</b> 03.21(목) 오는 차편</span>
+                                <small class="date">전주(19:30) → 서울(21:20)</small>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
     <!--// wrapper -->
 </body>
 <script>
-    const toggles = document.querySelectorAll(".toggle");
-    const asideMenu = document.getElementById("asideMenu");
-
-    toggles.forEach(button => {
-        button.addEventListener("click", () => {
-            asideMenu.classList.toggle("active");
-        });
+    $('document').ready(function(){
+        $('#header').load('/html/header.html');
     });
 </script>
 </html>
