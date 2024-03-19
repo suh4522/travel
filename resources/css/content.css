@@ -39,7 +39,7 @@ header .header-title {
     right: 0;
 }
 .ico-menu {
-    background-image: url(/resources/images/icon/ico_menu.svg);
+    background-image: url(resources/images/icon/ico_menu.svg);
 }
 
 .btn-close{
@@ -47,7 +47,7 @@ header .header-title {
     right: 0.625rem;
 }
 .ico-close {
-    background-image: url(/resources/images/icon/ico_close.svg);
+    background-image: url(resources/images/icon/ico_close.svg);
 }
 .nav {
     padding-top: 3.125rem;
