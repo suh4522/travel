@@ -17,7 +17,32 @@
     <div class="wrapper">
         <!-- header -->
         <header class="header" id="header">
+            <div class="inner-wrap">
+                <h1 class="header-title"><a href="https://suh4522.github.io/travel/">용&현수</a></h1>
+                <button type="button" class="btn-menu toggle"><i class="ico-menu"><span class="sr-only">메뉴</span></i></button>
+            </div>
+            <div id="asideMenu" class="aside-menu">
+                <button type="button" class="btn-close toggle"><i class="ico-close"><span class="sr-only">닫기</span></i></button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="html/navRestaurant.html"><span>맛집</span></a></li>
+                        <li><a href="html/navCafe.html"><span>카페</span></a></li>
+                        <li><a href="html/toSee.html"><span>볼거리</span></a></li>
+                        <li><a target="_blank" href="https://kko.to/TDWeBk2iHh"><span>숙소위치</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script>
+                
+                const toggles = document.querySelectorAll(".toggle");
+                const asideMenu = document.getElementById("asideMenu");
             
+                toggles.forEach(button => {
+                    button.addEventListener("click", () => {
+                        asideMenu.classList.toggle("active");
+                    });
+                });
+            </script>
         </header>
         <!--// header -->
         <main class="content">
@@ -68,9 +93,4 @@
     </div>
     <!--// wrapper -->
 </body>
-<script>
-    $('document').ready(function(){
-        $('#header').load('/html/header.html');
-    });
-</script>
 </html>
