@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Hyunsu & Young</title>
+    <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css"> <!-- swiper -->
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/content.css">
+    <script src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script src="../resources/js/swiper-bundle.min.js"></script> <!-- swiper -->
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <h1 class="header-title"><a href="index.html">용&현수</a></h1>
+                <button type="button" class="btn-menu toggle"><i class="ico-menu"><span class="sr-only">메뉴</span></i></button>
+            </div>
+        </header>
+        <div id="asideMenu" class="aside-menu">
+            <button type="button" class="btn-close toggle"><i class="ico-close"><span class="sr-only">닫기</span></i></button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#none"><span>맛집</span></a></li>
+                    <li><a href="#none"><span>카페</span></a></li>
+                    <li><a href="#none"><span>숙소위치</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--// header -->
+    </div>
+    <!--// wrapper -->
+</body>
+<script>
+    const toggles = document.querySelectorAll(".toggle");
+    const asideMenu = document.getElementById("asideMenu");
+
+    toggles.forEach(button => {
+        button.addEventListener("click", () => {
+            asideMenu.classList.toggle("active");
+        });
+    });
+</script>
+</html>
